@@ -1,0 +1,321 @@
+/*TIPO DE LETRA: */
+
+@font-face {
+    font-family: balsa;
+    src: url(BalsamiqSans-Regular.ttf);
+}
+
+/*TODO EL PORTAFOLIO*/
+
+*{
+    font-family: balsa;
+}
+
+body{
+    background-color: /*#911F27;*/#781D42;
+    justify-content: center;
+}
+
+/*BARRA DE NAVEGACION*/
+
+.nav-link{
+    color: #FCF0C8;
+}
+
+.nav-link:hover{
+    color: #FACE7F;
+}
+
+.nav-link:focus{
+    color: #f59758;
+}
+
+/*TITULO PRINCIPAL*/
+
+.nombre{
+    margin: 10%;
+    padding-top: 110px;
+    padding-bottom: 110px;
+    color:/*#FFD07F;*/ #F3EFCC;    
+    justify-content: center;
+    text-align: center;
+}
+
+.nombre .h1{
+    font-size: 70px;
+    padding-bottom:10px;
+}
+
+/*CONTENIDO GENERAL*/
+
+.center{
+    width: 60%;
+    background: /*#FCF0C8;*/ #F9E4D4;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 1px 5px 25px 10px /*rgb(226, 243, 96);*/ rgba(243, 239, 204, 0.568);
+    overflow: hidden;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-bottom: 10px;
+}
+
+.center .sobremi,
+.center .descripcion,
+.center .proyectos{
+    width: 100%;
+    height: 420px;
+}
+
+.h3{
+    text-align: center;
+}
+
+.subcontenedor1{
+    margin: 15px;
+    width: 30%;
+    position: absolute;
+    margin-top: 10%;
+    align-items: center;
+    text-align: right;
+
+}
+
+.subcontenedor2{
+    top: 176%;
+    right: 23%;
+    margin: 15px;
+    width: 28%;
+    position: absolute;
+    margin-top: 10%;
+    align-items: center;
+    text-align: left;
+}
+
+
+.boton1{
+    margin: 15px;
+    width: 30%;
+    position: absolute;
+    margin-top: 15%;
+    align-items: center;
+    text-align: right;
+}
+
+.boton2{
+    top: 180%;
+    right: 20%;
+    margin: 15px;
+    width: 30%;
+    position: absolute;
+    margin-top: 15%;
+    align-items: center;
+    text-align: left;
+}
+
+/*DISEÑO PARA LA FOTO A LA DERECHA:*/
+
+.fotoo{
+    width: 90%;
+    display: flex;
+    justify-content: flex-end;
+    align-items:baseline;
+    height: 60vh;
+    margin-top: 5%;
+}
+
+.fotoo div{
+    position: relative;
+    height: 300px;
+    width: 300px;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 0px 15px 25px;
+    box-shadow: rgb(0,0,0,0.50);
+
+}
+
+.fotoo div img{
+    width: 100%;
+    height: 100%;
+    transition: all 500ms ease-out;
+    float: right;
+}
+
+.fotoo div .capa{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgb(120, 29, 66,0.7);
+    transition: all 500ms ease-out;
+    opacity: 0;
+    visibility: hidden;
+    text-align: center;
+}
+
+.fotoo  div:hover > .capa {
+    opacity: 1;
+    visibility: visible;
+}
+
+.fotoo div:hover > .capa h3{
+    margin-top: 170px;
+    margin-bottom:15px;
+}
+
+.fotoo div .capa h3{
+    color:white;
+    font-weight: 600;
+    margin-bottom: 120px;
+    transition: all 500ms ease-out;
+    margin-top:30px;
+}
+
+/*DISEÑO PARA LA FOTO A LA IZQUIERDA:*/
+
+.foto{
+    width: 90%;
+    display: flex;
+    align-items:baseline;
+    height: 60vh;
+    margin-top: 5%;
+}
+
+.foto div{
+    position: relative;
+    height: 300px;
+    width: 300px;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 0px 15px 25px;
+    box-shadow: rgb(0,0,0,0.50);
+
+}
+
+.foto div img{
+    width: 100%;
+    height: 100%;
+    transition: all 500ms ease-out;
+    float: right;
+}
+
+.foto div .capa{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: /*rgb(99, 10, 16,0.7);*/ rgb(120, 29, 66,0.7);
+    transition: all 500ms ease-out;
+    opacity: 0;
+    visibility: hidden;
+    text-align: center;
+}
+
+.foto  div:hover > .capa {
+    opacity: 1;
+    visibility: visible;
+}
+
+.foto div:hover > .capa h3{
+    margin-top: 170px;
+    margin-bottom:15px;
+}
+
+.foto div .capa h3{
+    color:white;
+    font-weight: 600;
+    margin-bottom: 120px;
+    transition: all 500ms ease-out;
+    margin-top:30px;
+}
+
+.contenedor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.logros{
+    margin: 5%;
+    margin-left:80px;
+}
+
+.logros p{
+    color: rgb(44, 44, 44);
+}
+
+hr{
+    background-color: #630A10;
+    width:80%;
+    align-items: center;
+    margin: 25px auto;
+}
+
+.contacto{
+    padding-bottom: 50px;;
+}
+
+.container{
+    width: 90%;
+    padding-right: var(--bs-gutter-x,4.75rem);
+    padding-left: var(--bs-gutter-x,4.75rem);
+}
+
+.form-group{
+    margin: 15px;
+}
+
+input,
+textarea{
+    background-color: #F3EFCC;
+}
+
+button{
+    background-color: #9D5353;
+}
+
+
+
+/*******************************************************************************/
+/*                                 SOBREMI.HTML                                */
+
+.titulo{
+    text-align: center;
+    align-items: justify;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    color: #F3EFCC;
+}
+
+ul{
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+li{
+    text-align: justify;
+}
+
+
+/*******************************************************************************/
+/*                                 LOGROS.HTML                                 */
+
+.center .h6{
+    padding-left: 4%;
+    padding-right: 4%;
+    text-align: justify;
+}
+
+
+/*******************************************************************************/
+/*                                 PROYECTOS.HTML                              */
+
+
+.galerias{
+    width: 60%;
+}
+
+center > h5{
+    color: #F3EFCC
+}
