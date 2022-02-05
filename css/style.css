@@ -30,6 +30,12 @@ body{
     color: #f59758;
 }
 
+.btn{
+    background-color: #a35f26;
+    color: #fff;
+    border-color: #a35f26;
+}
+
 /*TITULO PRINCIPAL*/
 
 .nombre{
@@ -130,7 +136,7 @@ body{
     height: 300px;
     width: 300px;
     overflow: hidden;
-    border-radius: 20px;
+    border-radius: 36px;
     box-shadow: 0px 15px 25px;
     box-shadow: rgb(0,0,0,0.50);
 
@@ -187,7 +193,7 @@ body{
     height: 300px;
     width: 300px;
     overflow: hidden;
-    border-radius: 20px;
+    border-radius: 36px;
     box-shadow: 0px 15px 25px;
     box-shadow: rgb(0,0,0,0.50);
 
