@@ -9,11 +9,12 @@
 
 *{
     font-family: balsa;
+    margin: 0;
+    padding: 0;
 }
 
 body{
     background-color: /*#911F27;*/#781D42;
-    justify-content: center;
 }
 
 /*BARRA DE NAVEGACION*/
@@ -54,71 +55,101 @@ body{
 
 /*CONTENIDO GENERAL*/
 
-.center{
+.contenedor{
     width: 60%;
+    min-width: 360px;
     background: /*#FCF0C8;*/ #F9E4D4;
+    max-width: 1000px;
+    margin: 20px auto;
     border-radius: 10px;
-    justify-content: center;
-    align-items: center;
     box-shadow: 1px 5px 25px 10px /*rgb(226, 243, 96);*/ rgba(243, 239, 204, 0.568);
     overflow: hidden;
     padding-top: 50px;
     padding-bottom: 50px;
-    margin-bottom: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(8, auto);
+
+    grid-template-areas: "subtitulo1 subtitulo1"
+                         "subcontenedor1 foto1"
+                         "subtitulo2 subtitulo2"
+                         "foto2 subcontenedor2"
+                         "subtitulo3 subtitulo3"
+                         "subcontenedor3 foto3"
+                         "subtitulo4 subtitulo4"
+                         "container container";
 }
 
-.center .sobremi,
-.center .descripcion,
-.center .proyectos{
-    width: 100%;
-    height: 420px;
-}
 
-.h3{
+.subtitulo1{
     text-align: center;
+    grid-area: subtitulo1;
+    margin-top: 3%;
+    margin-bottom: 3%;
+
 }
 
 .subcontenedor1{
-    margin: 15px;
-    width: 30%;
-    position: absolute;
-    margin-top: 10%;
-    align-items: center;
+    grid-area: subcontenedor1;
     text-align: right;
+    margin-top: 20%;
+    min-width: 100px;
+}
+
+.foto1{
+    grid-area: foto1;
+}
+
+
+.subtitulo2{
+    text-align: center;
+    grid-area: subtitulo2;
+    margin-top: 6%;
+    margin-bottom: 3%;
 
 }
 
 .subcontenedor2{
-    top: 176%;
-    right: 23%;
-    margin: 15px;
-    width: 28%;
-    position: absolute;
-    margin-top: 10%;
-    align-items: center;
+    grid-area: subcontenedor2;
     text-align: left;
+    margin-top: 20%;
+}
+
+.foto2{
+    grid-area: foto2;
+    align-items: right;
 }
 
 
-.boton1{
-    margin: 15px;
-    width: 30%;
-    position: absolute;
-    margin-top: 15%;
-    align-items: center;
+.subtitulo3{
+    text-align: center;
+    grid-area: subtitulo3;
+    margin-top: 6%;
+    margin-bottom: 3%;
+
+}
+
+.subcontenedor3{
+    grid-area: subcontenedor3;
     text-align: right;
+    margin-top: 20%;
 }
 
-.boton2{
-    top: 180%;
-    right: 20%;
-    margin: 15px;
-    width: 30%;
-    position: absolute;
-    margin-top: 15%;
-    align-items: center;
-    text-align: left;
+.foto3{
+    grid-area: foto3;
 }
+
+.subtitulo4{
+    text-align: center;
+    grid-area: subtitulo4;
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+
+.container{
+    grid-area: container;
+}
+
 
 /*DISEÑO PARA LA FOTO A LA DERECHA:*/
 
@@ -139,7 +170,6 @@ body{
     border-radius: 36px;
     box-shadow: 0px 15px 25px;
     box-shadow: rgb(0,0,0,0.50);
-
 }
 
 .fotoo div img{
@@ -186,6 +216,7 @@ body{
     align-items:baseline;
     height: 60vh;
     margin-top: 5%;
+    margin-left: 15%;
 }
 
 .foto div{
@@ -196,7 +227,6 @@ body{
     border-radius: 36px;
     box-shadow: 0px 15px 25px;
     box-shadow: rgb(0,0,0,0.50);
-
 }
 
 .foto div img{
@@ -235,12 +265,6 @@ body{
     margin-top:30px;
 }
 
-.contenedor{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 
 .logros{
     margin: 5%;
@@ -251,21 +275,15 @@ body{
     color: rgb(44, 44, 44);
 }
 
-hr{
-    background-color: #630A10;
-    width:80%;
-    align-items: center;
-    margin: 25px auto;
-}
-
 .contacto{
-    padding-bottom: 50px;;
+    padding-bottom: 50px;
 }
 
 .container{
     width: 90%;
     padding-right: var(--bs-gutter-x,4.75rem);
     padding-left: var(--bs-gutter-x,4.75rem);
+
 }
 
 .form-group{
@@ -292,6 +310,26 @@ button{
     padding-top: 5%;
     padding-bottom: 5%;
     color: #F3EFCC;
+}
+
+.contenedor-b{
+    width: 60%;
+    min-width: 360px;
+    background: /*#FCF0C8;*/ #F9E4D4;
+    max-width: 1000px;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 1px 5px 25px 10px /*rgb(226, 243, 96);*/ rgba(243, 239, 204, 0.568);
+    overflow: hidden;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.contenedor-c{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 300px;
 }
 
 ul{
@@ -324,4 +362,56 @@ li{
 
 center > h5{
     color: #F3EFCC
+}
+
+
+@media screen and (max-width: 1200px){
+
+    .nombre .h1{
+        font-size: 40px;
+    }
+
+    .contenedor{
+        grid-template-areas: "subtitulo1 subtitulo1"
+                             "foto1 foto1"
+                             "subcontenedor1 subcontenedor1"
+                             "subtitulo2 subtitulo2"
+                             "foto2 foto2"
+                             "subcontenedor2 subcontenedor2"
+                             "subtitulo3 subtitulo3"
+                             "foto3 foto3"
+                             "subcontenedor3 subcontenedor3"
+                             "subtitulo4 subtitulo4"
+                             "container container";
+        
+        margin-top: 0;
+        padding-top: 0;
+        
+    }
+
+    .subcontenedor1,
+    .subcontenedor2,
+    .subcontenedor3{
+        margin-top: 0;
+        text-align: center;
+        margin-top: -100px;
+        margin-bottom: 30px;
+    }
+
+    .fotoo{
+        justify-content: center;    
+    
+    }
+    .foto{
+        margin-left: 2%;
+        justify-content: center;    
+    }
+
+    input,
+    textarea{
+        min-width: 300px;
+        justify-content: center;    
+
+    }
+
 }
