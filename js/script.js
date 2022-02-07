@@ -31,22 +31,54 @@ window.sr = ScrollReveal();
         delay: 200
     });
 
-    sr.reveal('.sobremi', {
+    //SOBRE MI
+    sr.reveal('.subtitulo1', {
+        duration: 1500,
+        delay: 200
+    });
+    sr.reveal('.subcontenedor1', {
+        duration: 1500,
+        delay: 200
+    });
+    sr.reveal('.foto1', {
         duration: 1500,
         delay: 200
     });
 
-    sr.reveal('.logros', {
+    //LOGROS
+    sr.reveal('.subtitulo2', {
+        duration: 1500,
+        delay: 200
+    });
+    sr.reveal('.foto2', {
+        duration: 1500,
+        delay: 200
+    });
+    sr.reveal('.subcontenedor2', {
         duration: 1500,
         delay: 200
     });
 
-    sr.reveal('.proyectos', {
+    //PROYECTOS
+    sr.reveal('.subtitulo3', {
+        duration: 1500,
+        delay: 200
+    });
+    sr.reveal('.subcontenedor3', {
+        duration: 1500,
+        delay: 200
+    });
+    sr.reveal('.foto3', {
         duration: 1500,
         delay: 200
     });
 
-    sr.reveal('.contacto', {
+    //CONTACTO
+    sr.reveal('.subtitulo4', {
+        duration: 1500,
+        delay: 200
+    });
+    sr.reveal('.container', {
         duration: 1500,
         delay: 200
     });
@@ -60,7 +92,7 @@ window.sr = ScrollReveal();
         distance: '160px'
     });
 
-    sr.reveal('div .contenedor .center', {
+    sr.reveal('div .contenedor-b .center', {
         delay: 700,
         duration: 1500,
         origin: 'left',
@@ -103,12 +135,3 @@ window.sr = ScrollReveal();
         distance: '200px'
     })
     
-
-  /*  
-    sr.reveal('',{
-        duration: ,
-        origin: ,
-        distance: 
-    });
-
-    */
