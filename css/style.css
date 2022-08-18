@@ -462,9 +462,37 @@ center > h5{
         
     }
 
+    .contenedor_sm{
+        grid-template-areas: "foto1 foto1"
+                             "subcontenedor1 subcontenedor1"
+                             "foto2 foto2"
+                             "subcontenedor2 subcontenedor2"
+                             "foto3 foto3"
+                             "subcontenedor3 subcontenedor3"
+                             "foto4 foto4"
+                             "subcontenedor4 subcontenedor4"
+                             "foto5 foto5"
+                             "subcontenedor5 subcontenedor5"
+                             "foto6 foto6"
+                             "subcontenedor6 subcontenedor6"
+                             "foto7 foto7"
+                             "subcontenedor7 subcontenedor7"
+                             "foto8 foto8"
+                             "subcontenedor8 subcontenedor8";
+        
+        margin-top: 0;
+        padding-top: 0;
+        
+    }
+
     .subcontenedor1,
     .subcontenedor2,
-    .subcontenedor3{
+    .subcontenedor3,
+    .subcontenedor4,
+    .subcontenedor5,
+    .subcontenedor6,
+    .subcontenedor7,
+    .subcontenedor8{
         margin-top: 0;
         text-align: center;
         margin-top: -100px;
