@@ -14,7 +14,7 @@
 }
 
 body{
-    background-color: /*#911F27;*/#781D42;
+    background-color: /*#911F27; #781D42*/ #8d4925;
 }
 
 /*BARRA DE NAVEGACION*/
@@ -55,7 +55,8 @@ body{
 
 /*CONTENIDO GENERAL*/
 
-.contenedor{
+.contenedor,
+.contenedor_sm{
     width: 60%;
     min-width: 360px;
     background: /*#FCF0C8;*/ #F9E4D4;
@@ -79,6 +80,8 @@ body{
                          "subtitulo4 subtitulo4"
                          "container container";
 }
+
+
 
 
 .subtitulo1{
@@ -183,7 +186,7 @@ body{
     position: absolute;
     width: 100%;
     height: 100%;
-    background: rgb(120, 29, 66,0.7);
+    background: rgb(100, 41, 25,0.7);
     transition: all 500ms ease-out;
     opacity: 0;
     visibility: hidden;
@@ -240,7 +243,7 @@ body{
     position: absolute;
     width: 100%;
     height: 100%;
-    background: /*rgb(99, 10, 16,0.7);*/ rgb(120, 29, 66,0.7);
+    background: rgb(100, 41, 25,0.7);
     transition: all 500ms ease-out;
     opacity: 0;
     visibility: hidden;
@@ -312,6 +315,88 @@ button{
     color: #F3EFCC;
 }
 
+/* Continuacion de linea 82:*/
+
+.subcontenedor4{
+    grid-area: subcontenedor4;
+    text-align: left;
+    margin-top: 20%;
+}
+
+.foto4{
+    grid-area: foto4;
+    align-items: right;
+}
+
+.subcontenedor5{
+    grid-area: subcontenedor5;
+    text-align: right;
+    margin-top: 20%;
+    min-width: 100px;
+}
+
+.foto5{
+    grid-area: foto5;
+}
+
+.subcontenedor6{
+    grid-area: subcontenedor6;
+    text-align: left;
+    margin-top: 20%;
+}
+
+.foto6{
+    grid-area: foto6;
+    align-items: right;
+}
+
+.subcontenedor7{
+    grid-area: subcontenedor7;
+    text-align: right;
+    margin-top: 20%;
+    min-width: 100px;
+}
+
+.foto7{
+    grid-area: foto7;
+}
+
+.subcontenedor8{
+    grid-area: subcontenedor8;
+    text-align: left;
+    margin-top: 20%;
+}
+
+.foto8{
+    grid-area: foto8;
+    align-items: right;
+}
+
+.contenedor_sm{
+    grid-template-areas: "subcontenedor1 foto1"
+                         "foto2 subcontenedor2"
+                         "subcontenedor3 foto3"
+                         "foto4 subcontenedor4"
+                         "subcontenedor5 foto5"
+                         "foto6 subcontenedor6"
+                         "subcontenedor7 foto7"
+                         "foto8 subcontenedor8";
+}
+/* Final de la continuacion*/
+
+ul{
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+li{
+    text-align: justify;
+}
+
+
+/*******************************************************************************/
+/*                                 LOGROS.HTML                                 */
+
 .contenedor-b{
     width: 60%;
     min-width: 360px;
@@ -332,18 +417,6 @@ button{
     min-width: 300px;
 }
 
-ul{
-    padding-left: 5%;
-    padding-right: 5%;
-}
-
-li{
-    text-align: justify;
-}
-
-
-/*******************************************************************************/
-/*                                 LOGROS.HTML                                 */
 
 .center .h6{
     padding-left: 4%;
