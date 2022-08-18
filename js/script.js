@@ -72,6 +72,54 @@ window.sr = ScrollReveal();
         duration: 1500,
         delay: 200
     });
+    
+    sr.reveal('.foto4', {
+        duration: 1500,
+        delay: 200
+    });
+    sr.reveal('.subcontenedor4', {
+        duration: 1500,
+        delay: 200
+    });
+
+    
+    sr.reveal('.subcontenedor5', {
+        duration: 1500,
+        delay: 200
+    });
+    sr.reveal('.foto5', {
+        duration: 1500,
+        delay: 200
+    });
+
+    
+    sr.reveal('.foto6', {
+        duration: 1500,
+        delay: 200
+    });
+    sr.reveal('.subcontenedor6', {
+        duration: 1500,
+        delay: 200
+    });
+
+    
+    sr.reveal('.subcontenedor7', {
+        duration: 1500,
+        delay: 200
+    });
+    sr.reveal('.foto7', {
+        duration: 1500,
+        delay: 200
+    });
+    
+    sr.reveal('.foto8', {
+        duration: 1500,
+        delay: 200
+    });
+    sr.reveal('.subcontenedor8', {
+        duration: 1500,
+        delay: 200
+    });
 
     //CONTACTO
     sr.reveal('.subtitulo4', {
