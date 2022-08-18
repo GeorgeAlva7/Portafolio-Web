@@ -35,6 +35,7 @@ body{
     background-color: #a35f26;
     color: #fff;
     border-color: #a35f26;
+    margin-top: 31px;
 }
 
 /*TITULO PRINCIPAL*/
@@ -506,6 +507,9 @@ center > h5{
     .foto{
         margin-left: 2%;
         justify-content: center;    
+    }
+
+    .btn .btn-warning .btn-lg{
     }
 
     input,
