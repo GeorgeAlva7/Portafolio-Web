@@ -1,530 +1,164 @@
-/*TIPO DE LETRA: */
-
-@font-face {
-    font-family: balsa;
-    src: url(BalsamiqSans-Regular.ttf);
-}
-
-/*TODO EL PORTAFOLIO*/
-
-*{
-    font-family: balsa;
-    margin: 0;
-    padding: 0;
-}
-
-body{
-    background-color: /*#911F27; #781D42*/ #0b2433;
-}
-
-/*BARRA DE NAVEGACION*/
-
-.nav-link{
-    color: #FCF0C8;
-}
-
-.nav-link:hover{
-    color: #FACE7F;
-}
-
-.nav-link:focus{
-    color: #f59758;
-}
-
-.btn{
-    background-color: #113a52;
-    color: #fff;
-    border-color: #113a52;
-    margin-top: 31px;
-}
-
-/*TITULO PRINCIPAL*/
-
-.nombre{
-    margin: 10%;
-    padding-top: 110px;
-    padding-bottom: 110px;
-    color:/*#FFD07F;*/ #4acb88;    
-    justify-content: center;
-    text-align: center;
-}
-
-.nombre .h1{
-    font-size: 70px;
-    padding-bottom:10px;
-}
-
-/*CONTENIDO GENERAL*/
-
-.contenedor,
-.contenedor_sm{
-    width: 60%;
-    min-width: 360px;
-    background: /*#FCF0C8;*/ #89c9dc;
-    max-width: 1000px;
-    margin: 20px auto;
-    border-radius: 10px;
-    box-shadow: 1px 5px 250px 10px /*rgb(226, 243, 96); rgba(243, 239, 204, 0.568)*/ rgb(77, 209, 143);
-    overflow: hidden;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(8, auto);
-
-    grid-template-areas: "subtitulo1 subtitulo1"
-                         "subcontenedor1 foto1"
-                         "subtitulo2 subtitulo2"
-                         "foto2 subcontenedor2"
-                         "subtitulo3 subtitulo3"
-                         "subcontenedor3 foto3"
-                         "subtitulo4 subtitulo4"
-                         "container container";
-}
-
-
-
-
-.subtitulo1{
-    text-align: center;
-    grid-area: subtitulo1;
-    margin-top: 3%;
-    margin-bottom: 3%;
-    color: #223026;
-}
-
-.subcontenedor1{
-    grid-area: subcontenedor1;
-    text-align: right;
-    margin-top: 20%;
-    min-width: 100px;
-    color: #223026;
-}
-
-.foto1{
-    grid-area: foto1;
-}
-
-
-.subtitulo2{
-    text-align: center;
-    grid-area: subtitulo2;
-    margin-top: 6%;
-    margin-bottom: 3%;
-    color: #223026;
-}
-
-.subcontenedor2{
-    grid-area: subcontenedor2;
-    text-align: left;
-    margin-top: 20%;
-    color: #223026;
-}
-
-.foto2{
-    grid-area: foto2;
-    align-items: right;
-}
-
-
-.subtitulo3{
-    text-align: center;
-    grid-area: subtitulo3;
-    margin-top: 6%;
-    margin-bottom: 3%;
-
-}
-
-.subcontenedor3{
-    grid-area: subcontenedor3;
-    text-align: right;
-    margin-top: 20%;
-}
-
-.foto3{
-    grid-area: foto3;
-}
-
-.subtitulo4{
-    text-align: center;
-    grid-area: subtitulo4;
-    margin-top: 3%;
-    margin-bottom: 3%;
-}
-
-.container{
-    grid-area: container;
-}
-
-.btn-warning :hover{
-    background-color: white;
-}
-
-/*DISEÑO PARA LA FOTO A LA DERECHA:*/
-
-.fotoo{
-    width: 90%;
-    display: flex;
-    justify-content: flex-end;
-    align-items:baseline;
-    height: 60vh;
-    margin-top: 5%;
-}
-
-.fotoo div{
-    position: relative;
-    height: 300px;
-    width: 300px;
-    overflow: hidden;
-    border-radius: 36px;
-    box-shadow: 0px 15px 25px;
-    box-shadow: rgb(0,0,0,0.50);
-}
-
-.fotoo div img{
-    width: 100%;
-    height: 100%;
-    transition: all 500ms ease-out;
-    float: right;
-}
-
-.fotoo div .capa{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: /*rgb(100, 41, 25,0.7)*/ rgb(17,58,82,0.8);
-    transition: all 500ms ease-out;
-    opacity: 0;
-    visibility: hidden;
-    text-align: center;
-}
-
-.fotoo  div:hover > .capa {
-    opacity: 1;
-    visibility: visible;
-}
-
-.fotoo div:hover > .capa h3{
-    margin-top: 170px;
-    margin-bottom:15px;
-}
-
-.fotoo div .capa h3{
-    color:white;
-    font-weight: 600;
-    margin-bottom: 120px;
-    transition: all 500ms ease-out;
-    margin-top:30px;
-}
-
-/*DISEÑO PARA LA FOTO A LA IZQUIERDA:*/
-
-.foto{
-    width: 90%;
-    display: flex;
-    align-items:baseline;
-    height: 60vh;
-    margin-top: 5%;
-    margin-left: 15%;
-}
-
-.foto div{
-    position: relative;
-    height: 300px;
-    width: 300px;
-    overflow: hidden;
-    border-radius: 36px;
-    box-shadow: 0px 15px 25px;
-    box-shadow: rgb(0,0,0,0.50);
-}
-
-.foto div img{
-    width: 100%;
-    height: 100%;
-    transition: all 500ms ease-out;
-    float: right;
-}
-
-.foto div .capa{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: rgb(17,58,82,0.8);
-    transition: all 500ms ease-out;
-    opacity: 0;
-    visibility: hidden;
-    text-align: center;
-}
-
-.foto  div:hover > .capa {
-    opacity: 1;
-    visibility: visible;
-}
-
-.foto div:hover > .capa h3{
-    margin-top: 170px;
-    margin-bottom:15px;
-}
-
-.foto div .capa h3{
-    color:white;
-    font-weight: 600;
-    margin-bottom: 120px;
-    transition: all 500ms ease-out;
-    margin-top:30px;
-}
-
-
-.logros{
-    margin: 5%;
-    margin-left:80px;
-}
-
-.logros p{
-    color: rgb(44, 44, 44);
-}
-
-.contacto{
-    padding-bottom: 50px;
-}
-
-.container{
-    width: 90%;
-    padding-right: var(--bs-gutter-x,4.75rem);
-    padding-left: var(--bs-gutter-x,4.75rem);
-
-}
-
-.form-group{
-    margin: 15px;
-}
-
-input,
-textarea{
-    background-color: #F3EFCC;
-}
-
-button{
-    background-color: #9D5353;
-}
-
-
-
-/*******************************************************************************/
-/*                                 SOBREMI.HTML                                */
-
-.titulo{
-    text-align: center;
-    align-items: justify;
-    padding-top: 5%;
-    padding-bottom: 5%;
-    color: #5cfaa9;
-}
-
-/* Continuacion de linea 82:*/
-
-.subcontenedor4{
-    grid-area: subcontenedor4;
-    text-align: left;
-    margin-top: 20%;
-}
-
-.foto4{
-    grid-area: foto4;
-    align-items: right;
-}
-
-.subcontenedor5{
-    grid-area: subcontenedor5;
-    text-align: right;
-    margin-top: 20%;
-    min-width: 100px;
-}
-
-.foto5{
-    grid-area: foto5;
-}
-
-.subcontenedor6{
-    grid-area: subcontenedor6;
-    text-align: left;
-    margin-top: 20%;
-}
-
-.foto6{
-    grid-area: foto6;
-    align-items: right;
-}
-
-.subcontenedor7{
-    grid-area: subcontenedor7;
-    text-align: right;
-    margin-top: 20%;
-    min-width: 100px;
-}
-
-.foto7{
-    grid-area: foto7;
-}
-
-.subcontenedor8{
-    grid-area: subcontenedor8;
-    text-align: left;
-    margin-top: 20%;
-}
-
-.foto8{
-    grid-area: foto8;
-    align-items: right;
-}
-
-.contenedor_sm{
-    grid-template-areas: "subcontenedor1 foto1"
-                         "foto2 subcontenedor2"
-                         "subcontenedor3 foto3"
-                         "foto4 subcontenedor4"
-                         "subcontenedor5 foto5"
-                         "foto6 subcontenedor6"
-                         "subcontenedor7 foto7"
-                         "foto8 subcontenedor8";
-}
-/* Final de la continuacion*/
-
-ul{
-    padding-left: 5%;
-    padding-right: 5%;
-}
-
-li{
-    text-align: justify;
-}
-
-
-/*******************************************************************************/
-/*                                 LOGROS.HTML                                 */
-
-.contenedor-b{
-    width: 60%;
-    min-width: 360px;
-    background: /*#FCF0C8;*/ #5cfaa9;
-    max-width: 1000px;
-    margin: 20px auto;
-    border-radius: 10px;
-    box-shadow: 1px 5px 25px 10px /*rgb(226, 243, 96);*/ rgba(243, 239, 204, 0.568);
-    overflow: hidden;
-    padding-top: 50px;
-    padding-bottom: 50px;
-}
-
-.contenedor-c{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-width: 300px;
-}
-
-div center h5{
-    color: #5cfaa9;
-}
-
-.center .h5{
-    padding-left: 4%;
-    padding-right: 4%;
-    text-align: justify;
-}
-
-
-/*******************************************************************************/
-/*                                 PROYECTOS.HTML                              */
-
-
-.galerias{
-    width: 60%;
-}
-
-center > h5{
-    color: #F3EFCC
-}
-
-
-@media screen and (max-width: 1200px){
-
-    .nombre .h1{
-        font-size: 40px;
-    }
-
-    .contenedor{
-        grid-template-areas: "subtitulo1 subtitulo1"
-                             "foto1 foto1"
-                             "subcontenedor1 subcontenedor1"
-                             "subtitulo2 subtitulo2"
-                             "foto2 foto2"
-                             "subcontenedor2 subcontenedor2"
-                             "subtitulo3 subtitulo3"
-                             "foto3 foto3"
-                             "subcontenedor3 subcontenedor3"
-                             "subtitulo4 subtitulo4"
-                             "container container";
-        
-        margin-top: 0;
-        padding-top: 0;
-        
-    }
-
-    .contenedor_sm{
-        grid-template-areas: "foto1 foto1"
-                             "subcontenedor1 subcontenedor1"
-                             "foto2 foto2"
-                             "subcontenedor2 subcontenedor2"
-                             "foto3 foto3"
-                             "subcontenedor3 subcontenedor3"
-                             "foto4 foto4"
-                             "subcontenedor4 subcontenedor4"
-                             "foto5 foto5"
-                             "subcontenedor5 subcontenedor5"
-                             "foto6 foto6"
-                             "subcontenedor6 subcontenedor6"
-                             "foto7 foto7"
-                             "subcontenedor7 subcontenedor7"
-                             "foto8 foto8"
-                             "subcontenedor8 subcontenedor8";
-        
-        margin-top: 0;
-        padding-top: 0;
-        
-    }
-
-    .subcontenedor1,
-    .subcontenedor2,
-    .subcontenedor3,
-    .subcontenedor4,
-    .subcontenedor5,
-    .subcontenedor6,
-    .subcontenedor7,
-    .subcontenedor8{
-        margin-top: 0;
-        text-align: center;
-        margin-top: -100px;
-        margin-bottom: 30px;
-    }
-
-    .fotoo{
-        justify-content: center;    
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="img/iconos/para-index.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/scroll.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <title>Portafolio</title>
+  </head>
+  <body>
+    <nav class="navbar sticky-top navbar-dark bg-dark">
+      <div class="container-fluid">
+      <ul class="nav nav-pills nav-fill">
+        <li class="nav-item">
+          <a class="nav-link" href="#1"><b>Sobre mí</b></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#2"><b>Logros</b></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#3"><b>Proyectos</b></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#4"><b>Conversemos</b></a>
+        </li>
+      </ul>
+    </div>
+    </nav>
+
+      <div class="nombre">
+        <h1 class="h1"><b>GEORGE ALVA LUIS</b></h1>
+        <p class="h5">Desarrollador web de profesion</p>
+        <p class="h5">Cantante en proceso</p>
+      </div>
+
+  <div class="contenedor">
     
-    }
-    .foto{
-        margin-left: 2%;
-        justify-content: center;    
-    }
 
-    /*.btn .btn-warning .btn-lg{
-    }*/
+    <div class="subtitulo1"  id="1">
+      <h3 class="h3"> <b>Sobre mí</b> </h3>
+    </div>
 
-    input,
-    textarea{
-        min-width: 300px;
-        justify-content: center;    
+    <div class="subcontenedor1">
+      <p class="h5"> <b>Soy estudiante de Ingeniería de Sistemas y Música, mis 2 pasiones. </b> </p>
+      <div class="boton1">
+        <form action="sobremi.html">
+          <button class="btn btn-dark btn-lg">Ver más</button>
+        </form>
+      </div>
+    </div>
 
-    }
+    <div class="foto1">
+      <div class="fotoo">
+        <div>
+          <img src="img/mi-perfil.jpeg" class="" alt="Ese soy yo :)" id="img" height="300px" width="300px">
+  
+          <div class="capa">
+            <h3> <b>George Alva Luis</b></h3>
+          </div>
+        </div>
+      </div>
+    </div>
 
-}
+
+
+    <div class="subtitulo2" id="2">
+      <h3 class="h3"> <b>Mis logros</b> </h3>
+    </div>
+
+    <div class="foto2">
+      <div class="foto">
+        <div>
+          <img src="img/L-obtenido.jpeg" class="" alt="Ese soy yo :)" id="img" height="300px" width="300px">
+
+          <div class="capa">
+            <h3> <b>Mis logros</b></h3>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="subcontenedor2">
+      <p class="h5"> <b>Soy un chico de 20 años, con muchas ganas de aplicar mis conocimientos y brindar soluciones.</b> </p>
+      
+      <div class="boton2">
+        <form action="logros.html">
+          <button class="btn btn-dark btn-lg">Ver más</button>
+        </form>
+      </div>
+    </div>
+
+
+
+    <div class="subtitulo3" id="3">
+        <h3 class="h3"> <b>Proyectos</b> </h3>
+    </div>
+
+    <div class="subcontenedor3">
+      <p class="h5"> <b>Aquí coloco los trabajos que elabore durante mi formacion académica o en mis ratos libres.</b> </p>
+      
+      <div class="boton1">
+        <form action="proyectos.html">            
+          <button class="btn btn-dark btn-lg">Leer más</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="foto3">
+      <div class="fotoo">
+        <div>
+          <img src="img/T-hecho.jpeg" class="" alt="Ese soy yo :)" id="img"  height="300px" width="300px">
+
+          <div class="capa">
+            <h3> <b>Mis proyectos</b></h3>
+          </div>
+        </div>
+
+      </div>
+      
+    </div>
+    
+    <div class="subtitulo4" id="4">
+      <h3 class="h3"> <b>Conversemos</b> </h3>
+      <p class="h5" style="text-align:center"> Déjeme un correo y trataré de comunicarme lo antes posible</p>
+    </div>
+
+    <div class="container">
+      <form class="form-horizontal" action="https://formspree.io/f/mayveoor" method="POST">
+          
+          <div class="form-group">
+            <label for="nombre" class="control-label col-md-3">Nombre/Empresa:</label>
+            <div class="col-md-12">
+              <input type="text" class="form-control" id="nombre" name="Nombre" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="correo" class="control-label col-md-3">Correo electrónico:</label>
+            <div class="col-md-12">
+              <input type="email" class="form-control" id="correo" name="Correo" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="mensaje" class="control-label col-md-3">Mensaje:</label>
+            <div class="col-md-12">
+              <textarea class="form-control" id="mensaje" name="Mensaje" required></textarea>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <div class="col-md-2 col-md-offset-2">
+              <button type="submit" class="btn btn-dark btn-lg">Enviar</button>
+            </div>
+          </div>
+      </form>
+    </div>
+
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <script src="js/script.js"></script>
+  </body>
+</html>
